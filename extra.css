@@ -1,0 +1,21 @@
+.ma2{
+    width:50%;
+    height: 700px;
+    margin-top: 20px;
+   flex: 1;
+
+}
+.continer{
+    width:50%;
+    display: flex;
+    align-items: center;
+   flex:2;
+   text-size-adjust: 70;
+}
+.ma{
+    width:20%;
+ 
+   flex: 1;}
+   .image{
+    display: flex;
+   }

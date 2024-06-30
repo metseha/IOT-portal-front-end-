@@ -1,0 +1,193 @@
+<!-- saved from url=(0036)file:///E:/Working%20Area/e/new.html -->
+<html>
+  <head>
+    <link rel = "icon" href = "images/fav_logo.jpg">
+    <meta http-equiv="Content-Type" content="text/html; charset=windows-1252" />
+    <script>
+      function login() {
+        const select = document.getElementById("roleSelect");
+        const fname = document.getElementById("fname");
+        const lname = document.getElementById("lname");
+        const email = document.getElementById("email");
+
+        const emailFname = email.value;
+        const selectedFname = fname.value;
+        const selectedLname = lname.value;
+        const selectedValue = select.value;
+
+        if (
+          selectedFname != "" && selectedLname != ""&& emailFname.indexOf('@')!=-1 )
+           {
+            
+          if (selectedValue === "staff") {
+            alert("succefuly loged");
+            window.location.href = "https://sis.hu.edu.et/"; // Redirect to sis.hu.edu.et
+          } else if (selectedValue === "student") {
+            alert("succefuly loged");
+            window.location.href = "https://sis.hu.edu.et/Home/Student"; // Redirect to sis.hu.edu.et/Home/Student
+          } else {
+            alert("Please select a valid role (Staff or Student)");
+          }
+        } else {
+          alert("Please Enter Proper data");
+        }
+      }
+    </script>
+    <style>
+        *{
+            text-align: center;
+            padding: 10px;
+        }
+        body{
+          background-color: #A8DFF1;
+        }
+        h3{
+      font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+      color: #2a08a7;
+        font-size: 30px;
+      
+      }
+
+        .bu{
+        text-align:center;
+        background-color: #333;
+        font-family: sans-serif;
+        border: 2px solid #da5315;
+            width: 24%;
+            height: auto;
+            text-align: center;
+            margin: auto;
+            border-radius: 12px;
+            background-color: rgb(147, 179, 168);
+            padding-bottom: 10px;
+            
+        }
+        .f{
+      
+        color:blue;
+        }
+        .l{
+        margin-top:10px;
+        color:blue;
+        display:block;
+        }
+        .e{
+        margin-bottom:10px;
+        color:blue;
+        display:block;
+        }
+        .po{
+            color: blue;
+            margin-bottom: 10px;
+        }
+        .lo{
+            background-color: transparent;
+            color: rgb(37, 37, 117);
+            width: 30%;
+            font-size: 18px;
+            transition: 0.5s ease;
+            text-align: center;
+            margin-top:10px;
+            border-radius:0%;
+            
+
+        }
+
+        .lo:hover {
+            background-color: #187b94;
+            color: black;
+            font-family: sans-serif;
+            font-size: 12px;
+
+        }
+    </style>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+
+
+    <div class="header">HAWASSA UNIVERSITY IOT</div>
+    <div class="nav-container">
+    <div class="nav-bar">
+      <ul>
+        <li><a href="index.html" class="pop-up">Home page</a></li>
+        <li><div class="dropdown">
+            <span>academics  </span> 
+            <div class="dropdown-content">
+              <a href="undergrad.html">undergraduate</a>
+
+              
+
+           <br>
+              <a href="masters.html">masters</a>
+            </div>
+            
+          </li>
+            
+        <li><div class="dropdown">
+            <span>Student services</span>
+            <div class="dropdown-content">
+              <a href="./dormitory.html">Dormitory</a> <br>
+              <a href="./healthycare.html">Health care</a> <br>
+              <a href="./library.html">Library</a>
+            </div></li>
+        <li><a href="extracalicular.html">Extracaricullar activity</a></li>
+        <li><div class="dropdown">
+            <a href="login.html">Login SIS</a>
+            </li>
+      </ul>
+    </div>
+  </div>
+<div class="pushdown" style="margin-top: 35px; ">
+
+  <h3 ><u>Login page </u></h3>
+  <br><br>
+    <div class="bu">
+      <br><br>
+      <label class="f" 
+        >First-Name:
+        <input
+          type="text"
+          placeholder="Enter your firstname" maxlength="15"
+          id="fname"
+        />
+         </label
+      ><br />
+      .
+      <label class="l"
+        >Last_Name:
+        <input
+          type="text"
+          placeholder="Enter your lastname" maxlength="15"
+          id="lname"
+        /> </label
+      ><br /> <br>
+      <label class="e"
+        >email-add:
+        <input
+          type="email"
+          placeholder="example@gmail.com" 
+          id="email"
+        /> </label
+      ><br />
+
+      <label class="po">Select your role:</label>
+      <select id="roleSelect" required>
+        <option value="">-- Select --</option>
+        <option value="staff">Staff</option>
+        <option value="student">Student</option>
+      </select>
+
+      <br /><br />
+      <label >
+        <input class="lo" type="button" value="Login" name="login" onclick="login()" />
+      </label>
+    </div>
+</div>
+<br><br><br><br>
+<footer>
+  <p>&copy;2023 IOT Campus</p>
+</footer>
+  
+  </body>
+</html>

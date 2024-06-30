@@ -1,0 +1,203 @@
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+h3{
+  margin-left: 25px;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+    transition: transform 0.2s ease-in-out;
+}
+p{
+  padding-left: 25px;
+  padding-top: 25px;
+  padding-bottom: 25px;
+
+}
+footer{
+    background-color:rgba(69, 129, 207, 0.87);
+    color: white;
+    padding-left: 27px;
+}
+a:hover{
+    opacity: 0.7;
+    text-decoration: underline;
+}
+.contact{
+   margin-top: 30px;
+    background-color: rgb(71, 65, 65);
+    color:white;
+    text-align: lift;
+    padding: 30px;
+  }
+  .contact a{
+color: white;
+  }
+  #pag{
+    font-size: 30px;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+ }
+ul {
+    list-style-type: none;
+    display: flex;
+    gap: 100px;
+  }
+  .header{
+    color: white;
+    font-size: 25px;
+    text-align: center;
+    padding: 30px;
+    background-color: rgba(69, 129, 207, 0.87);
+  }
+  .flex{
+
+    display: flex;
+  }
+  .container{
+    margin-top: 30px;
+    width: 780px;
+    margin-left: 18%;
+    display:flex;
+  }
+  .container1{
+    margin-top: 30px;
+    width: 780px;
+    margin-left: 18%;
+    display: block;
+    }
+  .nav-container{
+    background-color: rgb(243, 238, 238);
+  }
+  .nav-bar{
+    margin-left: 11%;
+    padding: 15px;
+    background-color: rgb(243, 238, 238);
+  }
+  
+  .dropdown {
+    position: relative;
+    display: inline-block;
+    font-size: 21px;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f7eeee;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    padding: 12px 16px;
+    z-index: 1;
+    color: white;
+    border-radius: 20px;
+  }
+  .dropdown:hover{
+    cursor: pointer;
+  }
+  .dropdown:hover .dropdown-content {
+    display: block;
+    cursor: pointer;
+  }
+
+.testimony{
+    width: 780px;
+    margin-left:240px ;
+    height: 400px;
+    display: inline-flex;
+    padding: 5px;
+    margin-top: 30px;
+    margin-right: 10px;
+}
+
+.hoverbox:hover{
+  color: white;
+  background-color: rgb(10, 0, 2);
+  height: 40px;
+}
+
+.box {
+   
+    width: 500px;
+    height: 400px;
+    
+    margin-right: 10px;
+  }
+  .Timage{
+    padding-bottom: 10px;
+    margin-left: 25px;
+    display: flex;
+    
+  }
+  .developers{
+    padding-left: 580px;
+  }
+  .dev-btn{
+    padding: 15px;
+    color: white;
+    background-color: rgb(17, 119, 93);
+    border-radius: 30px;
+    margin-left: 85%;
+  }
+  .dev-btn:hover{
+  cursor: grab;
+
+  }
+  .h1{
+    display: flex;
+}
+
+/* ------------------------------------------ */
+  
+
+.slider {
+    width: 730px;
+    height: 400px;
+    overflow: hidden;
+    position: relative;
+    margin: 0 auto;
+    border-radius: 20px;
+  }
+  
+  .slides {
+    display: flex;
+    animation: slideAnimation 20s infinite;
+    border-radius: 30px;
+  }
+  
+  .slides img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  @keyframes slideAnimation {
+    0%, 20% {
+      transform: translateX(0%);
+    }
+    25%, 45% {
+      transform: translateX(-100%);
+    }
+    50%, 70% {
+      transform: translateX(-200%);
+    }
+    75%, 95% {
+      transform: translateX(-300%);
+    }
+    100% {
+      transform: translateX(0%);
+    }
+  }
+  /* --------------------------------- */
+.drop_login{
+  background-color: #647264;
+  color: aliceblue;
+
+}
+  
